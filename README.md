@@ -1,13 +1,32 @@
-dummie gemserver
+A dummie gemserver
 ================
 
-The simplest implementation of geminabox gem server.
+The simplest implementation of geminabox gem.  
+ ***runs with ruby 1.9.3 and requires bundler***
 
-Ruby 1.9.3 or higher
+### Running the server
 
-Run:
+```bundle && thin start```
+
+
+### Uploading a gem
 ```
-./make-it-happen.sh
+$ gem build your-gem.gemspec
+$ gem inabox -g http://localhost:3000/ your-gem-x.x.x.gem
 ```
 
-Ta dá!
+### Checking the available gems
+
+To see the availables gems in your server open just [http://localhost:3000](http://localhost:3000).   
+
+### Using installed gems
+To get gems from your server add following line to your Gemfile
+
+```
+source 'http://localhost:3000' 
+```
+or just run in your terminal
+
+``` 
+$  gem source -a http://localhost:3000 
+```
