@@ -1,7 +1,7 @@
-psychic-gemserger
-=================
+dummie gemserver
+================
 
-A implementation of geminabox gem server.
+The simplest implementation of geminabox gem server.
 
 Ruby 1.9.3 or higher
 
