@@ -6,7 +6,9 @@ The simplest implementation of geminabox gem.
 
 ### Running the server
 
-```bundle && thin start```
+```
+$ bundle && thin start
+```
 
 
 ### Uploading a gem
